@@ -24,7 +24,7 @@ talks to the `oops-api-v1` Go backend; it owns no database and no business logic
 **Prerequisites:** Node.js 20.9+, pnpm, a running `oops-api-v1` backend (see `../oops-api-v1`)
 
 ```bash
-# 1. Install dependencies
+# 1. Install dependencies (also installs the Husky pre-push hook: lint + typecheck + test + build)
 pnpm install
 
 # 2. Set up environment
