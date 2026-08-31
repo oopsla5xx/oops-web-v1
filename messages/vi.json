@@ -1,0 +1,38 @@
+{
+  "common": {
+    "language": "Ngôn ngữ"
+  },
+  "systemStatus": {
+    "title": "Trạng thái hệ thống",
+    "status": "Trạng thái",
+    "service": "Dịch vụ",
+    "version": "Phiên bản",
+    "refresh": "Làm mới",
+    "refreshing": "Đang làm mới...",
+    "lastChecked": "Kiểm tra lần cuối: {timestamp}"
+  },
+  "errorPage": {
+    "title": "Đã có lỗi xảy ra",
+    "retry": "Thử lại"
+  },
+  "notFound": {
+    "title": "Không tìm thấy trang",
+    "description": "Trang bạn đang tìm không tồn tại.",
+    "returnHome": "Về trang chủ"
+  },
+  "errors": {
+    "INTERNAL_SERVER_ERROR": "Đã có lỗi xảy ra từ phía chúng tôi. Vui lòng thử lại sau.",
+    "RESOURCE_NOT_FOUND": "Không tìm thấy tài nguyên được yêu cầu.",
+    "BAD_REQUEST": "Yêu cầu không hợp lệ.",
+    "UNAUTHORIZED": "Bạn cần đăng nhập để tiếp tục.",
+    "FORBIDDEN": "Bạn không có quyền thực hiện thao tác này.",
+    "VALIDATION_ERROR": "Một số thông tin bạn cung cấp không hợp lệ.",
+    "CONFLICT": "Dữ liệu bị xung đột với dữ liệu hiện có.",
+    "GATEWAY_TIMEOUT": "Máy chủ phản hồi quá lâu.",
+    "TOO_MANY_REQUESTS": "Quá nhiều yêu cầu — vui lòng thử lại sau.",
+    "UNPROCESSABLE_ENTITY": "Yêu cầu không thể xử lý như đã gửi.",
+    "NETWORK_ERROR": "Không thể kết nối tới máy chủ. Kiểm tra kết nối mạng của bạn.",
+    "TIMEOUT": "Yêu cầu đã hết thời gian chờ. Vui lòng thử lại.",
+    "UNKNOWN_ERROR": "Đã có lỗi không xác định xảy ra. Vui lòng thử lại."
+  }
+}

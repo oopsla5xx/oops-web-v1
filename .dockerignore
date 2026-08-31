@@ -1,0 +1,14 @@
+node_modules
+.next
+.git
+.github
+.vscode
+.ai
+test-results
+playwright-report
+src/tests
+*.test.ts
+*.test.tsx
+.env*
+!.env.example
+npm-debug.log*

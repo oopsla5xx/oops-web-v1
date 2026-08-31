@@ -1,0 +1,38 @@
+{
+  "common": {
+    "language": "Language"
+  },
+  "systemStatus": {
+    "title": "System Status",
+    "status": "Status",
+    "service": "Service",
+    "version": "Version",
+    "refresh": "Refresh",
+    "refreshing": "Refreshing...",
+    "lastChecked": "Last checked: {timestamp}"
+  },
+  "errorPage": {
+    "title": "Something went wrong",
+    "retry": "Try again"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist.",
+    "returnHome": "Return home"
+  },
+  "errors": {
+    "INTERNAL_SERVER_ERROR": "Something went wrong on our end. Please try again later.",
+    "RESOURCE_NOT_FOUND": "The requested resource could not be found.",
+    "BAD_REQUEST": "The request was invalid.",
+    "UNAUTHORIZED": "You need to sign in to continue.",
+    "FORBIDDEN": "You don't have permission to do this.",
+    "VALIDATION_ERROR": "Some information you provided isn't valid.",
+    "CONFLICT": "This conflicts with existing data.",
+    "GATEWAY_TIMEOUT": "The server took too long to respond.",
+    "TOO_MANY_REQUESTS": "Too many requests — please slow down and try again.",
+    "UNPROCESSABLE_ENTITY": "The request couldn't be processed as sent.",
+    "NETWORK_ERROR": "Could not reach the server. Check your connection.",
+    "TIMEOUT": "The request timed out. Please try again.",
+    "UNKNOWN_ERROR": "Something unexpected happened. Please try again."
+  }
+}
