@@ -9,6 +9,7 @@
 | Coding conventions, error handling, env vars, SQL rules | `.ai/context/conventions.md`         |
 | Testing patterns, mocks, factory, coverage              | `.ai/context/testing-conventions.md` |
 | Security check list                                     | `.ai/context/security-checklist.md`  |
+| Design tokens, style rules, accessibility, tone         | `.ai/context/design-system.md`       |
 
 **When unsure about anything — read the relevant file above first. Do not guess.**
 
@@ -22,3 +23,4 @@
 - Read `.ai/context/conventions.md` before writing handlers, error handling, or env vars
 - Read `.ai/context/testing-conventions.md` before writing any test
 - Read `.ai/context/security-checklist.md` before writing authentication, authorization, handling user input, secrets, sensitive data, file uploads, external integrations, or security-sensitive code
+- Read `.ai/context/design-system.md` before writing any UI/component code
