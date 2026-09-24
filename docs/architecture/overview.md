@@ -14,9 +14,13 @@ does not implement business logic itself; that lives in the backend.
 - Validation: Zod (env vars, external API response shapes)
 - Testing: Vitest + Testing Library (unit/component), Playwright (e2e, against the real backend)
 - i18n: `next-intl` — locales `en` (default) + `vi`, URL-prefix routing (`/en`, `/vi`) via
-  `src/app/[locale]/`. See `.ai/decisions/add-next-intl-dependency.md`.
+  `src/app/[locale]/`. (The original dependency-decision writeup for this lived at
+  `.ai/decisions/add-next-intl-dependency.md`, since deleted — no standalone decision record was
+  kept; only findable via git history. New decisions go in the `design.md` of the OpenSpec change
+  that introduces them — see workspace root `docs/agent-context/authority.md`.)
 - Infra: Docker (multi-stage, `output: "standalone"`), no platform-specific deploy config yet
-- Key dependencies: `zod`, `zustand`, `next-intl`, `shadcn`/`@base-ui/react`, `@swc/helpers` (see `.ai/decisions/add-swc-helpers-dependency.md` for why it's explicit)
+- Key dependencies: `zod`, `zustand`, `next-intl`, `shadcn`/`@base-ui/react`, `@swc/helpers`
+  (explicit dependency — same note as above applies to why it's explicit)
 - Database: none — this app has no direct data store. All persistent state lives behind `oops-api-v1`.
 
 ## Module structure
@@ -60,8 +64,7 @@ updates `status`/`data`/`errorCode`.
 
 The browser never calls `oops-api-v1` directly — `BACKEND_API_BASE_URL` is a server-only env var
 and is never exposed to the client. This is deliberate: it avoids CORS entirely and keeps the
-backend's address out of client bundles. See `.ai/tasks/nextjs-production-setup.md` for the full
-reasoning.
+backend's address out of client bundles.
 
 ## Error contract (BE ↔ FE)
 
