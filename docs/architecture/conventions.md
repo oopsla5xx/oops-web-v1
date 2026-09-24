@@ -1,7 +1,6 @@
 # Conventions
 
 <!-- Each rule: clear name, ❌ (wrong) and ✅ (correct) examples, short rationale -->
-<!-- Remove sections not relevant to your project -->
 
 ---
 
@@ -116,7 +115,7 @@ export async function getHealth(): Promise<Health> {
 
 ### Rule: The browser never talks to the Backend API directly — always through an internal Route Handler
 
-See `.ai/context/architecture.md` → Main data flows. Client Components fetch `/api/health` (this
+See `docs/architecture/overview.md` → Main data flows. Client Components fetch `/api/health` (this
 app's own Route Handler), never `BACKEND_API_BASE_URL` directly — that env var is server-only.
 
 ---
@@ -177,7 +176,7 @@ const tErrors = useTranslations("errors");
 <AlertDescription>{errorCode ? tErrors(errorCode) : null}</AlertDescription>;
 ```
 
-**Rationale:** The backend never sends a localized message (see `.ai/context/architecture.md` →
+**Rationale:** The backend never sends a localized message (see `docs/architecture/overview.md` →
 Error contract) — codes are the only thing that's stable across languages. Every code (backend or
 client-only, see `src/constants/error-codes.ts`) must have a matching key in **both**
 `messages/en.json` and `messages/vi.json` under `errors.*`.
@@ -246,14 +245,14 @@ export function RefreshButton() {
 
 **Rationale:** Keeps the component trivially testable by rendering (mock the hook, assert on
 props/clicks) and the logic trivially testable without rendering (`renderHook`, assert on
-store/fetch behavior) — see `.ai/context/testing-conventions.md`. Don't create a hook this way
+store/fetch behavior) — see `docs/architecture/testing.md`. Don't create a hook this way
 until there's real logic to extract (a component that's just JSX + one store read doesn't need one).
 
 ---
 
 ## Testing
 
-See `.ai/context/testing-conventions.md` for the full rules (file layout, mocking boundaries,
+See `docs/architecture/testing.md` for the full rules (file layout, mocking boundaries,
 store/DOM reset between tests, why e2e tests run against the real backend).
 
 ---
