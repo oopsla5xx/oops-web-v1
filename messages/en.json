@@ -33,6 +33,39 @@
     "UNPROCESSABLE_ENTITY": "The request couldn't be processed as sent.",
     "NETWORK_ERROR": "Could not reach the server. Check your connection.",
     "TIMEOUT": "The request timed out. Please try again.",
-    "UNKNOWN_ERROR": "Something unexpected happened. Please try again."
+    "UNKNOWN_ERROR": "Something unexpected happened. Please try again.",
+    "EMAIL_ALREADY_TAKEN": "This email is already registered.",
+    "USERNAME_ALREADY_TAKEN": "This username is already taken.",
+    "INVALID_EMAIL_FORMAT": "Enter a valid email address.",
+    "INVALID_USERNAME_FORMAT": "Use 3-30 lowercase letters, digits, underscore, or hyphen.",
+    "PASSWORD_TOO_WEAK": "Password must be at least 10 characters."
+  },
+  "register": {
+    "title": "Create your account",
+    "subtitle": "Please enter your details to register.",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "username": "Username",
+    "email": "Email address",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "submit": "Create account",
+    "submitting": "Creating account...",
+    "success": "Account created. You can now log in.",
+    "alreadyHaveAccount": "Already have an account?",
+    "login": "Log in",
+    "requiredField": "This field is required.",
+    "passwordMismatch": "Passwords do not match."
+  },
+  "authLayout": {
+    "tagline": "Design. Build. Ship.",
+    "fromIdea": {
+      "title": "From idea to software.",
+      "description": "Plan, design, build, and test your product in one workspace."
+    },
+    "aiNative": {
+      "title": "Built for AI-native teams.",
+      "description": "Keep requirements, context, and engineering work connected from start to finish."
+    }
   }
 }

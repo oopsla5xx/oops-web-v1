@@ -105,7 +105,8 @@ backend's address out of client bundles.
 ## External dependencies
 
 - **`oops-api-v1`** (Go/Gin, sibling repo `../oops-api-v1`): the only external API this app calls.
-  Base URL is configured via `BACKEND_API_BASE_URL` (see `.env.example`). Currently only
-  `GET /api/v1/health` is implemented on the backend; as more endpoints ship, add their paths to
-  `src/constants/api.ts` (`BACKEND_API_PATHS`) and follow the same service/schema pattern as
-  `services/health.ts` / `schemas/health.schema.ts`.
+  Base URL is configured via `BACKEND_API_BASE_URL` (see `.env.example`). Currently
+  `GET /api/v1/health` and `POST /api/v1/auth/register` are implemented on the backend; as more
+  endpoints ship, add their paths to `src/constants/api.ts` (`BACKEND_API_PATHS`) and follow the
+  same service/schema pattern as `services/health.ts` / `schemas/health.schema.ts` (or
+  `services/auth.ts` / `schemas/auth.schema.ts` for a POST with a body).

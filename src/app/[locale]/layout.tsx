@@ -5,6 +5,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { LocaleSwitcher } from "@/features/system-status/LocaleSwitcher";
+import { Toaster } from "@/components/ui/sonner";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -43,10 +44,11 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
     >
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages}>
-          <div className="flex justify-end p-4">
+          <div className="flex justify-end px-4 py-2">
             <LocaleSwitcher />
           </div>
           {children}
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>

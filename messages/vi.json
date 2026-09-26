@@ -33,6 +33,39 @@
     "UNPROCESSABLE_ENTITY": "Yêu cầu không thể xử lý như đã gửi.",
     "NETWORK_ERROR": "Không thể kết nối tới máy chủ. Kiểm tra kết nối mạng của bạn.",
     "TIMEOUT": "Yêu cầu đã hết thời gian chờ. Vui lòng thử lại.",
-    "UNKNOWN_ERROR": "Đã có lỗi không xác định xảy ra. Vui lòng thử lại."
+    "UNKNOWN_ERROR": "Đã có lỗi không xác định xảy ra. Vui lòng thử lại.",
+    "EMAIL_ALREADY_TAKEN": "Email này đã được đăng ký.",
+    "USERNAME_ALREADY_TAKEN": "Tên đăng nhập này đã được sử dụng.",
+    "INVALID_EMAIL_FORMAT": "Vui lòng nhập một địa chỉ email hợp lệ.",
+    "INVALID_USERNAME_FORMAT": "Chỉ dùng chữ thường, số, dấu gạch dưới hoặc gạch ngang, 3-30 ký tự.",
+    "PASSWORD_TOO_WEAK": "Mật khẩu phải có ít nhất 10 ký tự."
+  },
+  "register": {
+    "title": "Tạo tài khoản của bạn",
+    "subtitle": "Vui lòng nhập thông tin để đăng ký.",
+    "firstName": "Tên",
+    "lastName": "Họ",
+    "username": "Tên đăng nhập",
+    "email": "Địa chỉ email",
+    "password": "Mật khẩu",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "submit": "Tạo tài khoản",
+    "submitting": "Đang tạo tài khoản...",
+    "success": "Đã tạo tài khoản. Bạn có thể đăng nhập ngay bây giờ.",
+    "alreadyHaveAccount": "Đã có tài khoản?",
+    "login": "Đăng nhập",
+    "requiredField": "Trường này là bắt buộc.",
+    "passwordMismatch": "Mật khẩu xác nhận không khớp."
+  },
+  "authLayout": {
+    "tagline": "Thiết kế. Xây dựng. Triển khai.",
+    "fromIdea": {
+      "title": "Từ ý tưởng đến phần mềm.",
+      "description": "Lên kế hoạch, thiết kế, xây dựng và kiểm thử sản phẩm trong một không gian làm việc."
+    },
+    "aiNative": {
+      "title": "Dành cho đội ngũ phát triển AI-native.",
+      "description": "Kết nối yêu cầu, ngữ cảnh và quá trình phát triển từ đầu đến cuối."
+    }
   }
 }
